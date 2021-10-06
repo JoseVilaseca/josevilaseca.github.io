@@ -1,4 +1,4 @@
-# <p align=center>Portafolio de Machine Learning de José Luis Vilaseca</p>
+
 
 
 ## <span align=left>[LinkedIn](https://www.linkedin.com/in/jose-luis-vilaseca/)</span> <span align=right>[GitHub](https://github.com/JoseVilaseca/josevilaseca.github.io)
