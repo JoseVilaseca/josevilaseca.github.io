@@ -65,11 +65,9 @@ Debido a lo antes mencionado, hay varias aristas a recorrer en la etapa de la pr
 Existe una gran cantidad de algoritmos que obtienen mejores resultados cuando rangos de los predictores estén normalizados o estandarizados. Existen muchas formas de normalizar los datos pero a lo largo del portafolio, utilizaré las 2 más comunes mencionadas a continuación
 #### Normalización Min-Max
 Este tipo de normalización utiliza los valores mínimo y máximo del conjunto y utiliza la siguiente transformación para obtener los nuevos valores de nuestro perdictor. Los posibles valores pertenecen al rango [0,1].
-
 <p align="center">
   <img src="Images/MinMax.png" width="50%">
 </p>
-
 
  #### Estandarización o Transformación Z
  Dicha técnica de normalizado refiere a la utilización de la media y de la desviación estándar de un atributo para realizar la siguiente transformación. La distribución resultante tendrá media 0 y desviación estandar 1.
@@ -165,16 +163,17 @@ Las máquinas de soporte vectorial son un tipo de algoritmo de machine learning 
 
 El propósito de este tipo de algoritmo es utilizar vectores de soporte (puntos de ambas clases que actúen como límites de su clase), un tipo de kernel (lineal, polinómico, radial, etc) y una constante C (definirá la flexibilidad con la que permitiremos violaciones respecto al márgen o frontera que se utilizará para la clasificación) para generar una función n-dimensional que separe a ambas clases de la mejor manera posible.
 
-[Prueba con máquinas de soporte vectorial]("Algoritmos no lineales/SVM.pdf")
+
 
 
 ## Caso de estudio 1
-En el caso de estudio 1 se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de desición para regresión.
+En el caso de estudio 1 presente en la carpeta raiz del repositorio, se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de desición para regresión.
 
-[Caso de estudio 1]()
+
 ## Artículos publicados y presentaciones realizadas
 
 [Despliega tu primer modelo de reconocimiento de imágenes en la nube](https://developer.ibm.com/es/technologies/artificial-intelligence/patterns/despliega-tu-primer-modelo-de-reconocimiento-de-imgenes-personalizado-en-la-nube/)
 [GitHub](https://github.com/IBM/ibm-developer-espanol/tree/master/contenido/inteligencia%20artificial/Reconocimiento%20de%20Im%C3%A1genes/codepattern_despliega-tu-primer-modelo-de-reconocimiento-de-imagenes)
 
 [Watson de la A a la Z - Visual Recognition y Natural Language Classifier](https://www.youtube.com/watch?v=FnJ_eON3mBo&t=5705s&ab_channel=EnriqueTopolansky)
+

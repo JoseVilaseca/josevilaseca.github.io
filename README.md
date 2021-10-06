@@ -163,13 +163,13 @@ Las máquinas de soporte vectorial son un tipo de algoritmo de machine learning 
 
 El propósito de este tipo de algoritmo es utilizar vectores de soporte (puntos de ambas clases que actúen como límites de su clase), un tipo de kernel (lineal, polinómico, radial, etc) y una constante C (definirá la flexibilidad con la que permitiremos violaciones respecto al márgen o frontera que se utilizará para la clasificación) para generar una función n-dimensional que separe a ambas clases de la mejor manera posible.
 
-[Prueba con máquinas de soporte vectorial]("Algoritmos no lineales/SVM.pdf")
+
 
 
 ## Caso de estudio 1
-En el caso de estudio 1 se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de desición para regresión.
+En el caso de estudio 1 presente en la carpeta raiz del repositorio, se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de desición para regresión.
 
-[Caso de estudio 1]()
+
 ## Artículos publicados y presentaciones realizadas
 
 [Despliega tu primer modelo de reconocimiento de imágenes en la nube](https://developer.ibm.com/es/technologies/artificial-intelligence/patterns/despliega-tu-primer-modelo-de-reconocimiento-de-imgenes-personalizado-en-la-nube/)
