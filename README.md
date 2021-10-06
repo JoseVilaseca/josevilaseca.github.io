@@ -37,7 +37,7 @@ El entendimiento del negocio y de la industria para la cual se realizará un pro
 
 También, la naturaleza de la solución pondrá restricciones sobre las distintas alternativas de una solución. Por ejemplo, un sistema de clasificación de imágenes/detección de objetos en tiempo real, deberá poder generar varias predicciones por segundo, lo que limita tanto el lugar en donde estará desplegado el modelo (probáblemente en un sistema embebido o en el edge) y deberá tener una potencia computacional alta para poder cumplir con las restricciones. Las librerías también deberán estar específicamente optimizadas para poder correr en sistemas que no posean grandes cantidades de memoria y ser sumamente eficientes en las funcionalidades que proveen (TF Lite es un buen ejemplo de esto). 
 
-Por otro lado, si estamos hablando de soluciones en las que el modelo se entrena una vez por día y se tiene un conjunto muy grande de datos, se deberán priorizar los algoritmos que puedan proveer una performance decente, pero principalmente que posean un tiempo de entrnamiento bajo, para cumplir con las restricciones temporales.
+Por otro lado, si estamos hablando de soluciones en las que el modelo se entrena una vez por día y se tiene un conjunto muy grande de datos, se deberán priorizar los algoritmos que puedan proveer una performance decente, pero principalmente que posean un tiempo de entrenamiento bajo, para cumplir con las restricciones temporales.
 
  
 
@@ -64,7 +64,7 @@ Debido a lo antes mencionado, hay varias aristas a recorrer en la etapa de la pr
 ### Normalizado y Estandarización
 Existe una gran cantidad de algoritmos que obtienen mejores resultados cuando rangos de los predictores estén normalizados o estandarizados. Existen muchas formas de normalizar los datos pero a lo largo del portafolio, utilizaré las 2 más comunes mencionadas a continuación
 #### Normalización Min-Max
-Este tipo de normalización utiliza los valores mínimo y máximo del conjunto y utiliza la siguiente transformación para obtener los nuevos valores de nuestro perdictor. Los posibles valores pertenecen al rango [0,1].
+Este tipo de normalización utiliza los valores mínimo y máximo del conjunto y utiliza la siguiente transformación para obtener los nuevos valores de nuestro predictor. Los posibles valores pertenecen al rango [0,1].
 <p align="center">
   <img src="Images/MinMax.png" width="50%">
 </p>
@@ -94,7 +94,7 @@ Para atributos numéricos, cuando la distribución de este es normal, se suele i
 Para atributos categóricos, imputar con la moda es una buena forma de deshacernos de los valores nulos.
 
 #### Utilización de un modelo para predecir valores nulos.
-Una estrategia más compleja, pero generalmente más aproximada es utilizar un modelo para predecir que valor debería ocupar el valor del nulo dependiendo de los otros atributos del ejemplo.
+Una estrategia más compleja, pero generalmente más aproximada es utilizar un modelo para predecir qué valor debería ocupar el lugar del valor nulo dependiendo de los otros atributos del ejemplo.
 
 ### Outliers
 Los outliers son valores que se alejan significativamente del resto de la muestra. Dependiendo de nuestra aplicación en particular, estos casos deberán ser removidos o tratados con especial cuidado porque pueden llegar a ser claves para detectar algún fenómeno que estemos tratando de predecir (por ejemplo detección de fraude). 
@@ -131,7 +131,7 @@ La etapa de modelado refiere a la creación de modelos a partir de datos. Estos 
 A continuación se presentarán 2 grandes categorías de algoritmos de Machine Learning: los algoritmos lineales y los no lineales.
 ### Algoritmos Lineales
 Los algoritmos lineales asumen una relación lineal entre los predictores y la variable objetivo. Son algoritmos simples que tienen un gran potencial para modelar relaciones lineales. El poseer distribuciones gausianas en los atributos ayuda a estos algoritmos a obtener mejores resultados.
-#### Rergresión Lineal
+#### Regresión Lineal
 A pesar de la simplicidad del algortitmo de regresión lineal, este algoritmo sigue siendo muy utilizado por su capacidad de modelar relaciones lineales. A diferencia de algoritmos más complejos, este posee numerosas ventajas como lo son:
 
 -Tiempo de entrenamiento bajo
@@ -150,13 +150,13 @@ En el caso de problemas de clasificación multiclase, la opción lineal por defe
 
 
 ### Algoritmos no lineales
-Estos algoritmos no asumen una relación de algún tipo específico como lo hacen los algoritmos lineales. Suelen tener menos sesgo (bias), pero una mayor varianza(variance) que los algoritmos lineales 
+Estos algoritmos no asumen una relación de algún tipo específico como lo hacen los algoritmos lineales. Suelen tener menos sesgo (bias) dado que no asumen una relación específica entre los predictores y la variable objetivo, pero una mayor varianza (variance) que los algoritmos lineales.
 #### Árboles de Decisión
 Los árboles de decisión son algoritmos que derivan de la rama de informática. Utilizando la estructura de un árbol, cada nodo posee una condición asociada a una única variable de entrada, y dependiendo del valor, el árbol decidirá por qué hijo se deberá proceder para que se pueda aplicar una predicción. Al llegar a un nodo hoja, se aplica la predicción.
 
 Para el entrenamiento de los mismos se utilizan conceptos como la ganancia de información o el índice de gini para determinar cuáles son las mejores particiones de los datos tal que exista una mayor ganancia de información o mayor separación de las clases. 
 
-Este tipo de algoritmo requiere que se aplique una optimización de hiperparámetros para reducir el sobreajuste del modelo al set de entrenamiento. Existen múltiples parámetros que ayudan a que el ajuste sea el correcto como por ejemplo limitar la altira del arbol, escoger un mínimo de ejemplos para cada nodo hoja, etc.
+Este tipo de algoritmo requiere que se aplique una optimización de hiperparámetros para reducir el sobreajuste del modelo al set de entrenamiento. Existen múltiples parámetros que ayudan a que el ajuste sea el correcto como por ejemplo limitar la altura del arbol, escoger un mínimo de ejemplos para cada nodo hoja, etc.
 
 #### Máquinas de Soporte Vectorial
 Las máquinas de soporte vectorial son un tipo de algoritmo de machine learning relativamente moderno (las primeras implementeciones se desarrollaron en los años 90). Este es un algoritmo para problemas de clasificación binaria (en su implementación básica, pues existen extensiones que amplian el algoritmo para problemas multiclase).
@@ -167,7 +167,7 @@ El propósito de este tipo de algoritmo es utilizar vectores de soporte (puntos 
 
 
 ## Caso de estudio 1
-En el caso de estudio 1 presente en la carpeta raiz del repositorio, se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de desición para regresión.
+En el caso de estudio 1 presente en la carpeta raiz del repositorio, se muestran los distintos pasos de un proyecto de datascience mencionados anteriormente y se intenta predecir precios de casas en Estados Unidos utilizando Regresión Lineal y Árboles de decisión para regresión.
 
 
 ## Artículos publicados y presentaciones realizadas
