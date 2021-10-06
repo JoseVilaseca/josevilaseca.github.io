@@ -65,9 +65,11 @@ Debido a lo antes mencionado, hay varias aristas a recorrer en la etapa de la pr
 Existe una gran cantidad de algoritmos que obtienen mejores resultados cuando rangos de los predictores estén normalizados o estandarizados. Existen muchas formas de normalizar los datos pero a lo largo del portafolio, utilizaré las 2 más comunes mencionadas a continuación
 #### Normalización Min-Max
 Este tipo de normalización utiliza los valores mínimo y máximo del conjunto y utiliza la siguiente transformación para obtener los nuevos valores de nuestro perdictor. Los posibles valores pertenecen al rango [0,1].
+
 <p align="center">
   <img src="images/MinMax.png" width="50%">
 </p>
+
 
  #### Estandarización o Transformación Z
  Dicha técnica de normalizado refiere a la utilización de la media y de la desviación estándar de un atributo para realizar la siguiente transformación. La distribución resultante tendrá media 0 y desviación estandar 1.
