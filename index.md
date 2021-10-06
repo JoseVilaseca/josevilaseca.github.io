@@ -114,12 +114,12 @@ Dos estrategias posibles para atacar estos casos es aplicar submuestreo (undersa
 
 ### Transformaciones para atributos con distribución sesgada
 Para distribuciones fuertemente sesgadas (skewed), aplicar transformaciones a la misma generalmente mejora la performance de los modelos entrenados con dichos datos. Dos transformaciones recomendadas son la función logarítmica y la transformación Box-Cox.
-<p align="left">
-  <img align=left src="Images/PreBoxCox.png" width="50%">
+<p align="center">
+  <img  src="Images/PreBoxCox.png" width="80%">
 </p>
 
-<p align="right">
-  <img  src="Images/PostBoxCox.png" width="50%">
+<p align="center">
+  <img   src="Images/PostBoxCox.png" width="80%">
 </p>
 
 
