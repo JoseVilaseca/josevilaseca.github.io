@@ -26,7 +26,7 @@ El desarrollo de soluciones que utilicen inteligencia artificial debe ser holist
 El proceso CRISP-DM (Cross-Industry Standard Process for Data Mining) describe las fases principales de un proyecto de minería/ciencia de datos, incluyendo la relación que existe entre cada etapa. 
 
 <p align="center">
-  <img src="images/Crisp.png" width="60%">
+  <img src="Images/Crisp.png" width="60%">
 </p>
 
 A continuación se explicará qué se debe considerar en cada etapa del proceso CRISP-DM.
@@ -48,10 +48,10 @@ En  este paso, deberemos estudiar los tipos de los atributos, ver qué tipo de s
 
 
 <p align="center">
-  <img src="images/Histogramas.png" width="60%">
+  <img src="Images/Histogramas.png" width="60%">
 </p>
 <p align="center">
-  <img src="images/Seaborn.png" width="60%">
+  <img src="Images/Seaborn.png" width="60%">
 </p>
 
 
@@ -66,13 +66,13 @@ Existe una gran cantidad de algoritmos que obtienen mejores resultados cuando ra
 #### Normalización Min-Max
 Este tipo de normalización utiliza los valores mínimo y máximo del conjunto y utiliza la siguiente transformación para obtener los nuevos valores de nuestro perdictor. Los posibles valores pertenecen al rango [0,1].
 <p align="center">
-  <img src="images/MinMax.png" width="50%">
+  <img src="Images/MinMax.png" width="50%">
 </p>
 
  #### Estandarización o Transformación Z
  Dicha técnica de normalizado refiere a la utilización de la media y de la desviación estándar de un atributo para realizar la siguiente transformación. La distribución resultante tendrá media 0 y desviación estandar 1.
 <p align="center">
-  <img src="images/Estandarizacion.png" width="50%">
+  <img src="Images/Estandarizacion.png" width="50%">
 </p>
 
 ### Manejo de valores faltantes o nulos
@@ -99,7 +99,7 @@ Una estrategia más compleja, pero generalmente más aproximada es utilizar un m
 ### Outliers
 Los outliers son valores que se alejan significativamente del resto de la muestra. Dependiendo de nuestra aplicación en particular, estos casos deberán ser removidos o tratados con especial cuidado porque pueden llegar a ser claves para detectar algún fenómeno que estemos tratando de predecir (por ejemplo detección de fraude). 
 <p align="center">
-  <img src="images/Outliers.png" width="80%">
+  <img src="Images/Outliers.png" width="80%">
 </p>
 
 ### Muestreo para dasets desbalanceados
@@ -113,11 +113,11 @@ Dos estrategias posibles para atacar estos casos es aplicar submuestreo (undersa
 ### Transformaciones para atributos con distribución sesgada
 Para distribuciones fuertemente sesgadas (skewed), aplicar transformaciones a la misma generalmente mejora la performance de los modelos entrenados con dichos datos. Dos transformaciones recomendadas son la función logarítmica y la transformación Box-Cox.
 <p align="left">
-  <img align=left src="images/PreBoxCox.png" width="50%">
+  <img align=left src="Images/PreBoxCox.png" width="50%">
 </p>
 
 <p align="right">
-  <img  src="images/PostBoxCox.png" width="50%">
+  <img  src="Images/PostBoxCox.png" width="50%">
 </p>
 
 
